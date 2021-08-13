@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container li {
+  padding: 1rem;
+  list-style-type: none;
+}
+
+/* Navbar links */
+
+.nav-links a:hover {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.nav-container li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.nav-links a {
+  transition: border 0.2s ease-in;
+}
+/* Navbar logo */
+
+.nav-logo {
+  flex: 1;
+}
+#nav-logo-name {
+  font-size: 1.4rem;
+}
+
+.nav-logo span {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-family: "Style Script", cursive;
+}
+
+.nav-search {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-toggle i {
+  color: white;
+  font-size: 1.5rem;
+  display: none;
+}
+
+/*  */
+/* MAIN */
+/*  */
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/main-img.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+/*  */
+/* MAIN CONTAINER */
+/*  */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 7%;
+  max-width: 50%;
+  margin: 50px auto;
+  color: white;
+}
+
+.main-fish i {
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.705);
+}
+.main-text {
+  font-size: 3rem;
+  font-family: "Style Script", cursive;
+}
+.fas {
+  font-size: 1rem;
+  padding: 8px;
+}
+.main-adress i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.main-container p {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-reservation {
+  background-color: rgb(212, 33, 20);
+  padding: 20px 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.596);
+  margin-top: 50px;
+  transition: transform 0.3s;
+}
+
+.main-reservation:hover {
+  transform: translateY(-2px);
+}
+.main-reservation:active {
+  transform: translateY(0px);
+}
+
+/*  */
+/* QUERIES */
+/*  */
+
+@media (max-width: 950px) {
+  .nav-container ul {
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    width: 100%;
+    text-align: center;
+    min-height: 100%;
+    display: none;
+  }
+  .nav-toggle i {
+    display: block;
+  }
+  .main-container {
+    font-size: 0.9rem;
+  }
+  .main-reservation {
+    font-size: 1rem;
+    padding: 20px 40px;
+  }
+  .main-text {
+    font-size: 2.5rem;
+  }
+  .nav-search i {
+    display: none;
+  }
+  .main-fish i {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 620px) {
+  .main-container {
+    font-size: 0.8rem;
+  }
+  .main-reservation {
+    font-size: 0.8rem;
+    padding: 15px 35px;
+  }
+  .main-fish i {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .main-container {
+    font-size: 0.7rem;
+  }
+  .main-reservation {
+    font-size: 0.7rem;
+    padding: 12px 30px;
+  }
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.507);
+  display: block;
+  height: 100%;
+  width: 100vw;
+}
