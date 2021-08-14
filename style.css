@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .nav-container {
@@ -95,6 +96,7 @@
   margin: auto;
   color: white;
   padding-top: 50px;
+  font-size: 1rem;
 }
 
 .main-fish i {
@@ -270,5 +272,52 @@
 
 .active {
   display: block;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+}
+/*  */
+/* Section ANSWERS */
+/*  */
+
+.questions {
+  padding-top: 30px;
+  min-width: 80vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.747)),
+    url(/question.jpg);
+  color: white;
+}
+
+.question-box {
+  width: 60vw;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  max-width: 80vw;
+  color: white;
+}
+.question-box h3 {
+  color: rgb(212, 33, 20);
+}
+.question-hr {
+  margin-top: 10px;
+  height: 3px;
+  background-color: white;
+  min-width: 100%;
+  text-align: center;
+}
+
+.answer {
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.fa-arrow-circle-down {
+  color: rgb(212, 33, 20);
+  font-size: 2rem;
 }
