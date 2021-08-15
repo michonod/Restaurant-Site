@@ -288,6 +288,34 @@ body {
   }
 }
 
+@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 780px) {
+  .nav-container-nav {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(78, 134, 84);
+  }
+  .nav-container li {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+  }
+  .nav-container li a {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+}
+
 .active {
   display: block;
 }
