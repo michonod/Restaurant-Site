@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    to right,
+    #06beb6,
+    #48b1bf
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 60vw;
+  min-height: 80vh;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  background-color: rgba(108, 131, 134, 0.582);
+}
+form input {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  min-width: 60%;
+  padding: 10px 25px;
+  text-align: center;
+  margin: 20px;
+  border: none;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 50px 0;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.form-heading h1 {
+  font-family: "Style Script", cursive;
+  font-size: 3rem;
+  color: rgb(212, 33, 20);
+}
+
+.submit-btn {
+  background-color: rgba(212, 33, 20, 0.829);
+  padding: 20px 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.596);
+  margin: 30px 0px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  background-color: rgb(212, 33, 20);
+}
+
+select {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+.back {
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back:hover {
+  color: rgb(212, 33, 20);
+}

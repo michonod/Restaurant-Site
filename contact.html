@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contactStyle.css" />
+    <script src="/contactScript.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="form-heading">
+      <h1>Reserve Table</h1>
+      <p>
+        Please fill the form below accurately to enable us serve you better!
+      </p>
+      <a href="/index.html"
+        ><button class="back" title="Go Back">
+          <i class="fas fa-backward"></i></button
+      ></a>
+    </div>
+
+    <form action="">
+      <label for="firstName">First name:</label>
+      <input
+        type="text"
+        id="firstName"
+        placeholder="Peter"
+        name="reservationForm"
+        required
+      />
+      <label for="lastName">Last name:</label>
+      <input
+        type="text"
+        id="lastName"
+        placeholder="Green"
+        name="reservationForm"
+        required
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="petergreen@hotmail.com"
+        name="reservationForm"
+        required
+      />
+      <br />
+      <label for="phone">Phone:</label>
+      <input type="number" name="reservationForm" id="phone" required />
+      <br />
+      <label for="guest">Number of guest:</label>
+      <input type="number" name="reservationForm" id="guest" required />
+      <label for="type">Select a reservation type:</label>
+      <select name="reservationForm" id="type">
+        <option value="please select">Please Select</option>
+        <option value="dinner">Dinner</option>
+        <option value="VIP">VIP</option>
+        <option value="birthday">Birthday</option>
+        <option value="wedding">Wedding</option>
+        <option value="holyday">Holyday</option>
+        <option value="anniversary">Anniversary</option>
+        <option value="private">Private</option>
+      </select>
+      <label for="date">Enter a date:</label>
+      <input type="date" id="date" name="reservationForm" required />
+      <label for="time">Choose a time:</label>
+      <input
+        type="time"
+        id="time"
+        name="reservationForm"
+        min="10:00"
+        max="23:00"
+        required
+      />
+
+      <label for="special">Any special request: </label>
+      <textarea
+        name="reservationForm"
+        id="special"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

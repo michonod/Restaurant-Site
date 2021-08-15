@@ -9,7 +9,12 @@
 
 body {
   overflow-x: hidden;
-  background-color: rgba(224, 134, 134, 0.267);
+  background: linear-gradient(
+    to right,
+    #06beb6,
+    #48b1bf
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   max-width: 100vw;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
