@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="menuStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script src="/menuScript.js" defer></script>
+  </head>
+  <body>
+    <div class="menu-text">
+      <h1>
+        Click on the <span class="green">Apple</span> to fetch some random
+        meal<br />
+        and learn how to cook it
+      </h1>
+      <button class="fetch back green" title="Fetch Random Meal">
+        <i class="fas fa-apple-alt"></i>
+      </button>
+      <div class="hr-line"></div>
+      <a href="/index.html"
+        ><button class="back" title="Go Back">
+          <i class="fas fa-backward"></i></button
+      ></a>
+      <div class="hr-line"></div>
+      <button class="reload back green" title="Remove the Meal">
+        <i class="fas fa-sync-alt"></i>
+      </button>
+      <div class="hr-line"></div>
+    </div>
+    <div class="meal-box"></div>
+  </body>
+</html>

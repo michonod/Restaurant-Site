@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgba(224, 134, 134, 0.267);
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hr-line {
+  height: 5px;
+  background-color: rgb(212, 33, 20);
+  width: 50px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.menu-text {
+  font-size: 1.5rem;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Style Script", cursive;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.fetch {
+  margin-bottom: 20px;
+}
+.green {
+  color: green;
+}
+
+.back {
+  margin: 8px 0px;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.back:hover {
+  color: rgb(212, 33, 20);
+}
+
+img {
+  max-width: 30vw;
+  height: auto;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.width-line {
+  width: 70%;
+}
+.meal-box-container {
+  background: linear-gradient(
+    to right,
+    #4ca1af,
+    #c4e0e5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  flex-direction: row;
+  /* max-width: 70vw;
+  max-height: 50vh; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: black;
+}
+.meal-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  max-width: 60vw;
+  min-height: 50vh;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.meal-box-name {
+  font-family: "Style Script", cursive;
+  font-size: 2rem;
+}
+
+.meal-box-text {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+@media (max-width: 1024px) {
+  .meal-box-text {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 900px) {
+  .menu-text {
+    font-size: 1.2rem;
+  }
+  .meal-box-name {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .meal-box-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu-box-text {
+    font-size: 0.5rem;
+  }
+  .meal-box-name {
+    font-size: 1.8rem;
+  }
+}
