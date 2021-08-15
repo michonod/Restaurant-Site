@@ -201,6 +201,7 @@ body {
 /*  */
 /* QUERIES */
 /*  */
+
 @media (max-width: 950px) {
   .nav-container-nav {
     width: 100%;
@@ -286,37 +287,6 @@ body {
   .main-text {
     text-align: center;
   }
-}
-
-@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 780px) and (min-device-width: 319px) and (max-device-width: 780px) {
-  .nav-toggle {
-    display: none;
-  }
-  .nav-container {
-    display: inline-block;
-  }
-  .nav-container ul {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-  }
-  .nav-container .nav-links {
-    padding-left: 30px;
-    margin: 0;
-    display: inline-block;
-  }
-
-  /* .nav-links {
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-  } */
-  /* 
-  .nav-container ul {
-    min-width: 100vw;
-    min-height: 100vh; */
-  /* flex-wrap: wrap; */
-  /* } */
 }
 
 .active {
