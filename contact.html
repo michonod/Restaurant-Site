@@ -29,6 +29,7 @@
     <form action="">
       <label for="firstName">First name:</label>
       <input
+        class="firstName"
         type="text"
         id="firstName"
         placeholder="Peter"
@@ -37,6 +38,7 @@
       />
       <label for="lastName">Last name:</label>
       <input
+        class="lastName"
         type="text"
         id="lastName"
         placeholder="Green"
@@ -46,6 +48,7 @@
       <br />
       <label for="email">Email:</label>
       <input
+        class="email"
         type="email"
         id="email"
         placeholder="petergreen@hotmail.com"
@@ -54,25 +57,44 @@
       />
       <br />
       <label for="phone">Phone:</label>
-      <input type="number" name="reservationForm" id="phone" required />
+      <input
+        class="phone"
+        type="number"
+        name="reservationForm"
+        id="phone"
+        required
+      />
       <br />
       <label for="guest">Number of guest:</label>
-      <input type="number" name="reservationForm" id="guest" required />
+      <input
+        class="numberOfGuest"
+        type="number"
+        name="reservationForm"
+        id="guest"
+        required
+      />
       <label for="type">Select a reservation type:</label>
-      <select name="reservationForm" id="type">
+      <select class="reservation-type" name="reservationForm" id="type">
         <option value="please select">Please Select</option>
         <option value="dinner">Dinner</option>
         <option value="VIP">VIP</option>
         <option value="birthday">Birthday</option>
         <option value="wedding">Wedding</option>
-        <option value="holyday">Holyday</option>
+        <option value="holyday">Hollyday</option>
         <option value="anniversary">Anniversary</option>
         <option value="private">Private</option>
       </select>
       <label for="date">Enter a date:</label>
-      <input type="date" id="date" name="reservationForm" required />
+      <input
+        class="date"
+        type="date"
+        id="date"
+        name="reservationForm"
+        required
+      />
       <label for="time">Choose a time:</label>
       <input
+        class="time"
         type="time"
         id="time"
         name="reservationForm"
@@ -83,6 +105,7 @@
 
       <label for="special">Any special request: </label>
       <textarea
+        class="specialRequest"
         name="reservationForm"
         id="special"
         cols="30"
