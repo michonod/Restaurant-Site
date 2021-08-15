@@ -181,6 +181,7 @@ body {
   width: 50px;
   margin-bottom: 50px;
   border-radius: 5px;
+  border: none;
 }
 
 .about-main-image {
@@ -326,6 +327,7 @@ body {
   background-color: white;
   min-width: 100%;
   text-align: center;
+  border: none;
 }
 
 .answer {

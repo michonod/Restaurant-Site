@@ -21,6 +21,7 @@ body {
   width: 50px;
   margin-bottom: 10px;
   border-radius: 5px;
+  border: none;
 }
 
 .menu-text {
@@ -55,7 +56,7 @@ body {
 }
 
 img {
-  max-width: 30vw;
+  max-width: 35vw;
   height: auto;
   border-radius: 30px;
   padding: 20px;
@@ -86,7 +87,7 @@ img {
   justify-content: center;
   /* border: 1px solid black; */
   border-radius: 10px;
-  max-width: 60vw;
+  max-width: 80vw;
   min-height: 50vh;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -96,6 +97,7 @@ img {
 .meal-box-name {
   font-family: "Style Script", cursive;
   font-size: 2rem;
+  text-align: center;
 }
 
 .meal-box-text {
@@ -120,6 +122,10 @@ img {
   .meal-box-text {
     font-size: 1rem;
   }
+  img {
+    max-width: 60vw;
+    height: auto;
+  }
 }
 
 @media (max-width: 425px) {
@@ -128,5 +134,16 @@ img {
   }
   .meal-box-name {
     font-size: 1.8rem;
+  }
+  img {
+    max-width: 60vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  img {
+    max-width: 70vw;
+    height: auto;
   }
 }
