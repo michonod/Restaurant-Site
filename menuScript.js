@@ -22,17 +22,16 @@ const fetchData = async () => {
   const newEl = document.createElement("div");
   divEl.append(newEl);
   newEl.innerHTML = mealsEl;
-  //   const newDiv = document.createElement("div");
-  //   newDiv.innerHTML = mealsEl;
-  //   newDiv.append(divEl);
-};
-let clickFunction = () => {
-  fetchBtn.removeEventListener("click", clickFunction, false);
 };
 
-fetchBtn.addEventListener("click", fetchData, { once: true });
+let timeClicked = 1;
 
-reload.addEventListener("click", () => {
-  window.location.reload();
-  fetchData();
+fetchBtn.addEventListener("click", () => {
+  timeClicked++;
+  if (timeClicked % 2 === 0) {
+    fetchData();
+    console.log(timeClicked);
+  } else if (timeClicked % 2 !== 0) {
+    window.location.reload();
+  }
 });

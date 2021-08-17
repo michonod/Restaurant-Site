@@ -11,7 +11,7 @@ body {
     to right,
     #06beb6,
     #48b1bf
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
 
   min-width: 100vw;
   min-height: 100vh;
@@ -24,7 +24,6 @@ form {
   flex-direction: column;
   max-width: 60vw;
   min-height: 80vh;
-  /* border: 2px solid red; */
   border-radius: 10px;
   margin: 0 auto;
   padding-top: 10px;
